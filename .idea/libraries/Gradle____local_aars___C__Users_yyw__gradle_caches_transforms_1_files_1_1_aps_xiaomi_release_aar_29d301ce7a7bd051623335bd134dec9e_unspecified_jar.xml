@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C.\Users\yyw\.gradle\caches\transforms-1\files-1.1\aps-xiaomi-release.aar\29d301ce7a7bd051623335bd134dec9e:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/aps-xiaomi-release.aar/29d301ce7a7bd051623335bd134dec9e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/aps-xiaomi-release.aar/29d301ce7a7bd051623335bd134dec9e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/aps-xiaomi-release.aar/29d301ce7a7bd051623335bd134dec9e/jars/libs/MiPush_SDK_Client_3_6_12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

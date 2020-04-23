@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.dcloud.HelloH5">
+
+
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+
+
+    <!-- Push(推送)只能选择一个推送组件 -->
+    <!-- Push(推送)-MKeyPush begin -->
+    <!--
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    -->
+    <!-- Push(推送)-MKeyPush  end -->
+
+
+    <!-- 小米推送 -->
+    <!--
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>
+    <uses-permission android:name="com.HBuilder.integrate.permission.MIPUSH_RECEIVE"/>
+    <permission android:name="com.HBuilder.integrate.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    -->
+    <!-- 小米推送 end -->
+
+
+    <!-- Share - 微信分享 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Push(推送)   end -->
+
+
+    <!-- 基座删除的部分权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="io.dcloud.application.DCloudApplication"
+        android:allowClearUserData="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:debuggable="true"
+        >
+
+        <activity
+            android:name="io.dcloud.PandoraEntry"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:theme="@style/TranslucentTheme"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <provider
+            android:name="io.dcloud.common.util.DCloud_FileProvider"
+            android:authorities="io.dcloud.HelloH5.dc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/dcloud_file_provider" />
+        </provider>
+
+
+        <!-- Oauth 授权登陆 start -->
+
+
+        <!-- Oauth Sina start -->
+
+
+        <!-- Oauth Sina end -->
+        <!-- Oauth 授权登陆 end -->
+
+
+        <!-- Speech(语音识别)-讯飞语音 begin -->
+        <!-- 官方网站：http://open.voicecloud.cn/ -->
+        <!-- meta-data节点android:name="IFLY_APPKEY"项中android:value值为讯飞语音云网站申请的APPKEY，由于它是和libs目录下的jar包是绑定的，不要修改此值 -->
+
+
+
+        <!-- Push(推送)-个推 begin -->
+        <!-- 官方网站：http://www.igetui.com/ -->
+        <!-- meta-data节点android:name="appid"项中android:value值为个推服务器上申请的APPID -->
+        <!-- meta-data节点android:name="appkey"项中android:value值为个推服务器上申请的APPKEY -->
+        <!-- meta-data节点android:name="appsecret"项中android:value值为个推服务器上申请的APPSECRET -->
+
+
+
+        <!-- Share(分享) begin -->
+
+
+
+
+        <!-- 微信分享 配置begin -->
+        <meta-data
+            android:name="WX_SECRET"
+            android:value="fdc6251421d3d688a563b4f00dd540e7" />
+        <meta-data
+            android:name="WX_APPID"
+            android:value="wx0411fa6a39d61297" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx0411fa6a39d61297" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享 配置 end -->
+
+        <!-- 微信支付配置 start -->
+
+        <meta-data
+            android:name="WX_APPID"
+            android:value="wx0411fa6a39d61297" />
+
+        <!-- 微信支付配置end -->
+
+
+
+
+        <!-- Dcloud 开屏广告配置>
+        <meta-data android:name="DCLOUD_STREAMAPP_CHANNEL" android:value="io.dcloud.H57BCF8D2|H57BCF8D2|12331280401"></meta-data>
+        <meta-data android:name="DCLOUD_AD_ID" android:value="-553621487"></meta-data>
+        <meta-data android:name="DCLOUD_AD_SPLASH" android:value="true"></meta-data>
+        < Dcloud 开屏广告配置-->
+
+
+        <activity
+            android:name="io.dcloud.PandoraEntryActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard"
+            android:hardwareAccelerated="true"
+            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+            android:screenOrientation="user"
+            android:theme="@style/DCloudTheme"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="h56131bcf" />
+            </intent-filter>
+        </activity>
+<!--        <provider-->
+<!--            android:name="io.dcloud.gdt.GdtFileProvider"-->
+<!--            android:authorities="io.dcloud.HelloH5.fileprovider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/gdt_file_path"-->
+<!--                tools:replace="android:resource"/>-->
+<!--        </provider>-->
+
+<!--        <provider-->
+<!--            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"-->
+<!--            android:authorities="io.dcloud.HelloH5.TTFileProvider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_paths"-->
+<!--                tools:replace="android:resource"/>-->
+<!--        </provider>-->
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="io.dcloud.HelloH5.TTMultiProvider"
+            android:exported="false" />
+    </application>
+
+</manifest>

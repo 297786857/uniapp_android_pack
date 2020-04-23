@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C.\Users\yyw\.gradle\caches\transforms-1\files-1.1\baidu-libs-release.aar\4cf8d826ce6c58c066893af1500bf5f5:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/baidu-libs-release.aar/4cf8d826ce6c58c066893af1500bf5f5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/baidu-libs-release.aar/4cf8d826ce6c58c066893af1500bf5f5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/baidu-libs-release.aar/4cf8d826ce6c58c066893af1500bf5f5/jars/libs/BaiduLBS_Android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

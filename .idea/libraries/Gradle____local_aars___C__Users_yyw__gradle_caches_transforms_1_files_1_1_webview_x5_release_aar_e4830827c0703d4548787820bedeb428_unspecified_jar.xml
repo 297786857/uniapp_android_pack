@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C.\Users\yyw\.gradle\caches\transforms-1\files-1.1\webview-x5-release.aar\e4830827c0703d4548787820bedeb428:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/webview-x5-release.aar/e4830827c0703d4548787820bedeb428/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/webview-x5-release.aar/e4830827c0703d4548787820bedeb428/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/webview-x5-release.aar/e4830827c0703d4548787820bedeb428/jars/libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

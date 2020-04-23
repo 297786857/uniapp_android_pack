@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C.\Users\yyw\.gradle\caches\transforms-1\files-1.1\torch-plgdtsdk-5.12.3140.aar\1e9a3598af8d031ab20ebc43b5974bd6:unspecified@jar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/torch-plgdtsdk-5.12.3140.aar/1e9a3598af8d031ab20ebc43b5974bd6/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/torch-plgdtsdk-5.12.3140.aar/1e9a3598af8d031ab20ebc43b5974bd6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/torch-plgdtsdk-5.12.3140.aar/1e9a3598af8d031ab20ebc43b5974bd6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
